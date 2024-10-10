@@ -26,11 +26,11 @@ Este projeto é uma aplicação Delphi para consulta de endereços com base em C
 ### Estrutura do Projeto
 
 O projeto está organizado da seguinte forma:
-
+```plaintext
 Q1
-├── Q1.txt                  #Resposta da primeira questao
+├── Q1.txt                  # Resposta da primeira questão
 Q2
-├── Q2.txt                  #Resposta da segunda questao
+├── Q2.txt                  # Resposta da segunda questão
 Q3
 ├── /src                    # Código fonte da aplicação
 │   ├── uLibCEP.pas         # Contém a função principal ConsultarCEP
@@ -38,6 +38,4 @@ Q3
 ├── /tests                  # Testes unitários
 │   └── uTestLibCEP.pas     # Testes para a função ConsultarCEP
 └── README.md               # Este arquivo
-
-
-
+```
