@@ -1,0 +1,10 @@
+Padrão Singleton, que garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+
+Conceito: O Singleton garante que uma classe tenha uma única instância ao longo da aplicação, evitando a criação de múltiplos objetos desnecessários.
+
+Objetivo: Evitar a duplicação de objetos quando um único ponto de controle é necessário. Um exemplo comum é a gestão de conexões de banco de dados.
+
+Cenário de uso: Em uma aplicação que precise de um gerenciador de logs global, o Singleton garantiria que apenas uma instância do gerenciador fosse utilizada.
+
+
+

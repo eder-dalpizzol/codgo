@@ -1,0 +1,15 @@
+A arquitetura MVC (Model-View-Controller) é um padrão de design amplamente utilizado em desenvolvimento de software. Ele separa a aplicação em três componentes principais:
+
+Model (Modelo): Responsável por gerenciar os dados e a lógica de negócios da aplicação. O modelo comunica-se com a base de dados e não tem dependência direta da interface do usuário.
+
+View (Visão): Representa a interface do usuário. Ela exibe os dados que o Model fornece e encaminha as interações do usuário ao Controller.
+
+Controller (Controlador): Atua como intermediário entre o Model e a View. Ele recebe as entradas do usuário da View, processa as informações (por meio do Model), e retorna a resposta para ser exibida na View.
+
+Exemplo:
+
+Suponha que você esteja desenvolvendo um sistema de gestão de clientes:
+
+O Model contém as informações dos clientes e as funções para criar, ler, atualizar e deletar clientes da base de dados.
+A View é a tela onde os clientes podem ser visualizados, editados ou excluídos.
+O Controller processa os cliques e inputs do usuário, decide quais dados do cliente devem ser mostrados ou quais ações devem ser realizadas no banco de dados.
