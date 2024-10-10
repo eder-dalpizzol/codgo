@@ -6,7 +6,7 @@ Este projeto é uma aplicação Delphi para consulta de endereços com base em C
 
 - Consulta de endereços por CEP com fallback entre as APIs ViaCEP, Apicep e AwesomeAPI.
 - Tratamento de exceções para garantir que o usuário sempre receba uma resposta válida ou uma mensagem clara de erro.
-- Testes unitários usando **DUnit** para validar o comportamento da aplicação em diferentes cenários.
+- Testes unitários usando **DUnitX** para validar o comportamento da aplicação em diferentes cenários.
 - Validação básica do formato do CEP (8 dígitos).
 
 ## Público-Alvo
