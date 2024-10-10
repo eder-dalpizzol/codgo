@@ -37,5 +37,5 @@ Q3
 │   └── Main.pas            # Arquivo principal da aplicação
 ├── /tests                  # Testes unitários
 │   └── uTestLibCEP.pas     # Testes para a função ConsultarCEP
-└── README.md               # Este arquivo
+README.md               # Este arquivo
 ```
