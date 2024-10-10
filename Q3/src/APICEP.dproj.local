@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/10/10 13:43:26.000.508,=C:\Users\eder\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/10/10 13:44:22.000.834,C:\Users\eder\Desktop\uMain.pas=C:\Users\eder\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/10/10 13:44:22.000.834,C:\Users\eder\Desktop\uMain.dfm=C:\Users\eder\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2024/10/10 13:44:34.000.134,C:\Users\eder\Desktop\APICEP.dproj=C:\Users\eder\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/10/10 13:44:44.000.990,=C:\Users\eder\Desktop\Unit1.pas</Transaction>
+    <Transaction>2024/10/10 13:44:57.000.005,C:\Users\eder\Desktop\uLibCEP.pas=C:\Users\eder\Desktop\Unit1.pas</Transaction>
+    <Transaction>2024/10/10 14:10:27.292,=C:\Users\eder\Desktop\CEP\lib\uLibCEP.pas</Transaction>
+  </Transactions>
+</BorlandProject>

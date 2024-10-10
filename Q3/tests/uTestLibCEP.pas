@@ -1,0 +1,61 @@
+unit uTestLibCEP;
+
+interface
+
+uses
+  TestFramework, uLibCEP, System.SysUtils;
+
+type
+  // Classe de teste
+  TTestCEP = class(TTestCase)
+  published
+    procedure TestConsultarCEPValido;
+    procedure TestConsultarCEPInvalido;
+    procedure TestFalhaAPIs;
+  end;
+
+implementation
+
+procedure TTestCEP.TestConsultarCEPValido;
+var
+  Result: string;
+begin
+  // Teste com um CEP válido e esperado sucesso (pode ser um CEP real ou fictício)
+  try
+    Result := ConsultarCEP('84070110'); // CEP válido
+    CheckTrue(Pos('logradouro', Result) > 0, 'Deveria retornar informações válidas do CEP.');
+  except
+    on E: Exception do
+      Fail('Não deveria lançar exceção em um CEP válido: ' + E.Message);
+  end;
+end;
+
+procedure TTestCEP.TestConsultarCEPInvalido;
+begin
+  // Teste com um CEP inválido (menos de 8 dígitos)
+  try
+    ConsultarCEP('123'); // CEP inválido
+    Fail('Deveria lançar exceção para um CEP inválido.');
+  except
+    on E: Exception do
+      CheckEquals('O CEP deve conter 8 dígitos.', E.Message, 'A exceção correta não foi lançada.');
+  end;
+end;
+
+procedure TTestCEP.TestFalhaAPIs;
+begin
+  // Aqui você pode simular um CEP que falhe em todas as APIs ou usar um CEP que não exista
+  try
+    ConsultarCEP('00000000'); // Um CEP inválido para todas as APIs
+    Fail('Deveria lançar exceção ao falhar em todas as APIs.');
+  except
+    on E: Exception do
+      CheckEquals('Falha em todas as consultas de CEP.', E.Message, 'A exceção correta não foi lançada.');
+  end;
+end;
+
+initialization
+  // Registra a classe de teste
+  RegisterTest(TTestCEP.Suite);
+end.
+
